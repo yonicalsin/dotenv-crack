@@ -1,7 +1,7 @@
 {
    "name": "cogenv",
    "version": "1.0.0",
-   "description": "",
+   "description": "Cogenv is a zero-dependency module that powers the environment variables of an `.env` file in`process.env`. Cogenv brings functions that will make your project powerful !",
    "main": "index.js",
    "scripts": {
       "start": "SET MODE=development & node dist/index.js",
@@ -24,7 +24,12 @@
       "rimraf": "^3.0.2"
    },
    "keywords": [
-      "dotenv"
+      "dotenv",
+      "dotenv-expand",
+      "getEnv",
+      "getEnvOne",
+      "cogenv",
+      "process.env"
    ],
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
    "license": "MIT"
