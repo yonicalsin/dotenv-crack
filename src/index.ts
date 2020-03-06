@@ -47,7 +47,7 @@ export let getEnvOne = (param: string, defaults = {}) => {
    return data;
 };
 
-export const parseObject = (obj = {}) => {
+const parseObject = (obj = {}) => {
    const data = {};
    for (const [k, v] of Object.entries(obj)) {
       const arrIndex = k.split(/\||\@/gi);
