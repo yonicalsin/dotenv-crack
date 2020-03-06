@@ -1,0 +1,32 @@
+{
+   "name": "cogenv",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "SET MODE=development & node dist/index.js",
+      "start:prod": "SET MODE=production & node dist/index.js",
+      "dev": "yarn prebuild & tsc -w",
+      "dev:start": "nodemon dist/index.js",
+      "build": "yarn prebuild & tsc",
+      "build:start": "yarn build & yarn start",
+      "prebuild": "rimraf dist"
+   },
+   "dependencies": {
+      "dotenv": "8.2.0",
+      "dotenv-expand": "5.1.0",
+      "lodash": "4.17.15",
+      "reflect-metadata": "0.1.13"
+   },
+   "devDependencies": {
+      "@types/lodash": "4.14.149",
+      "@types/node": "13.7.4",
+      "nodemon": "^2.0.2",
+      "rimraf": "^3.0.2"
+   },
+   "keywords": [
+      "dotenv"
+   ],
+   "author": "Yoni Calsin <helloyonicb@gmail.com>",
+   "license": "MIT"
+}
