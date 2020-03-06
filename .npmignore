@@ -1,0 +1,7 @@
+.vscode
+src
+.env
+.gitignore
+.npmrc
+.prettierrc.js
+tsconfig.json
